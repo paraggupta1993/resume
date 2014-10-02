@@ -1,0 +1,184 @@
+% LaTeX resume using res.cls
+
+\documentclass[margin]{res}
+%\usepackage{helvetica} % uses helvetica postscript font (download helvetica.sty)
+%\usepackage{newcent}   % uses new century schoolbook postscript font 
+%\usepackage[bookmarks=true,pdfborder={0 0 0}]{hyperref}
+%\usepackage{hyperref}
+
+\usepackage[colorlinks]{hyperref}
+\hypersetup{urlcolor=blue}
+\usepackage[svgnames]{xcolor}
+
+\setlength{\textwidth}{5.1in} % set width of text portion
+
+\begin{document}
+
+% Center the name over the entire width of resume:
+% Draw a horizontal line the whole width of resume:
+ \moveleft.5\hoffset\centerline{\large\bf Parag Gupta}
+ % Draw a horizontal line the whole width of resume:
+ \moveleft\hoffset\vbox{\hrule width\resumewidth height 1pt}\smallskip
+ 
+\address{114, Old Boys Hostel\\
+International Institute of Information Technology \\
+Gachibowli, Hyderabad - 500032 \\
+Andhra Pradesh, India. \\
+Contact Number : +91-7416524684 }
+
+\address{University Roll Number : 201001125 \\
+\hypersetup{urlcolor=Maroon}
+Email : \href{mailto:paraggupta1993@gmail.com}{paraggupta1993@gmail.com} \\
+\hypersetup{urlcolor=blue}
+GitHub: \href{https://github.com/paraggupta1993}{github.com/paraggupta1993} \\
+Profile: \href{http://www.linkedin.com/in/darkhorcrux}{linkedin.com/in/darkhorcrux} \\
+Date Of Birth : March 20, 1993 \\
+}
+
+\begin{resume}
+ 
+\section{Education} {\sl \bf Bachelor of Technology,} Computer Science and Engineering    \hfill{2010-2014}\\
+                      % \sl will be bold italic in New Century Schoolbook (or
+	              % any postscript font) and just slanted in
+		      %	Computer Modern (default) font
+		  \hypersetup{urlcolor=black}          
+          \href{http://www.iiit.ac.in/}{International Institute of Information Technology - Hyderabad} \\
+		  \hypersetup{urlcolor=blue}
+          Current status : 4th year ( 7th semester ) \\
+          {\bf CGPA : 7.75 / 10}
+                 
+          {\sl Senior Secondary schooling ,} Class ${12}^{th}$   \hfill{2009-2010} \\
+		  \hypersetup{urlcolor=black}          
+          \href{http://www.morningstarratlam.com/home_morningstarschool.htm}{Morning Star Higher Secondary School}, Ratlam , India \\
+          \hypersetup{urlcolor=blue}
+          Percentage : 90.8 \% 
+
+
+\section{Interest} { Web development, Algorithms, Problem solving, Computer Networks, Data mining and information extraction. }
+
+
+\section{Experience}
+{\sl \underline{\bf Internships} : }
+\begin{itemize}
+\item
+ \hypersetup{urlcolor=black}
+ {\it \href{http://www.linkedin.com/company/groupon-india}{Groupon India Private Limited}} \hfill{Summer 2013} \\
+ \hypersetup{urlcolor=blue}
+$\rightarrow$ {\it Ruby on Rails, Backbone.js , Bootstrap, Coffeescript, Mysql, HTML, CSS, Rspec and Jasmine unit testing tools } 
+
+ Developed an internationalized and localized web application, internally used by the company over 40+ countries to enhance {\it customer relationship management.} \hfill{Developers team size: 4} 
+\item
+\hypersetup{urlcolor=black}
+{\it \href{http://www.linkedin.com/company/3049433}{Aasaanpay Solutions India Private Limited}}  \hfill{Spring 2013} 
+
+\hypersetup{urlcolor=blue}
+$\rightarrow$ {\it Amazon AWS, Python, Android, Java, Infrastructure } \\
+ Setted-up PCI complaint infrastructure on cloud and developed user interface for the company's android application.   
+\end{itemize} 
+
+{\sl \underline{\bf Teaching Assistant} at IIIT-Hyderabad: } 
+\begin{itemize}
+\item IT Workshop  \hfill{Monsoon 2013}
+\item Computer System Organization \hfill{Spring 2013}
+\item Structured Systems Analysis and Design \hfill{Monsoon 2012}
+\end{itemize}
+
+
+
+\section{Major Projects}
+{\bf Risk-assessment of loan applications using Classification } \\ \hfill{Mentor: \href{http://iiit.ac.in/people/faculty/kamal}{Kamalakar Karlapalem}}  \\
+$\rightarrow$ {\it Data mining, Classification, Weka, Python  } \\
+Built a classifier model to categorize loan applications according to its associated risk-factor, into different 'Loan Grades' and impose interest rates accordingly.
+
+
+{\bf Information Leak using ICMP protocol} \hfill{Mentor: \href{http://iiit.ac.in/people/faculty/shatrunjay.rawat}{Shatrunjay Rawat}}  \\
+$\rightarrow$ {\it C, Python, pthreads, BSD Sockets, Security } \\
+This project aims at transferring data packets using ICMP protocol. Study the security loopholes associated with ICMP and measures to prevent any such security attacks. (Use of wire-shark, Iptables, ICMP tunneling, etc.)  \hfill{(Team size: 2)}
+
+{\bf Entity Based Opinion Mining from Blogs} \hfill{Mentor: \href{http://faculty.iiit.ac.in/~vv/Home.html}{Vasudev Verma}} \\
+$\rightarrow$ {\it Java, Eclipse, Stanford NLP toolkit, Sentiment Analysis, Opinion Mining, Object Identification, Opinion Summary
+} \hfill{(Team size: 2)} \\
+It attempts to identify objects being
+talked about in the blog and the opinion(sentiment) that the author expresses
+towards them which can further be summarized. 
+Based on {\it "Entity Centric Opinion Mining from Blogs"} published in Coling-2012. 
+
+{\bf Wikipedia Search Engine} \hfill{Mentor: \href{http://faculty.iiit.ac.in/~vv/Home.html}{Vasudev Verma}} \\
+$\rightarrow$ {\it CPP/C++ , Python, Bash script, Information extraction, XML, Tf-idf } \\
+Designed a scalable and efficient wikipedia dataset search engine supporting 5 field queries building multi-level indices for faster search. 
+
+{\bf Compiler Optimization Phase Sequence Search Engine} \\
+{ Mentor: \href{http://iiit.ac.in/people/faculty/psuresh}{Suresh Purini}} \\
+$\rightarrow$ {\it Python, GCC, llvm, Hill Climbing algorithm (heuristic search) } \\
+It aims to find out optimal compilation phase sequence for llvm and gcc compilers irrespective of input and the program.  
+
+
+
+\section{Minor Projects}
+{\bf API addition in OpenStack Nova-Client} \hfill{Mentor:Prasad Saripalli} \\
+$\rightarrow$ {\it Python, OpenStack, Cloud,  libvirt, Virtualization } \\
+OpenStack is a Cloud operating system. Added an API in Nova-client of Openstack using libvirt to dynamically add/remove memory from live Virtual machines.
+
+{\bf Room Reservation Web Application} \hfill{Mentor: \href{http://faculty.iiit.ac.in/~raghu.reddy/Home.html}{Y Raghu Reddy}} \\ 
+$\rightarrow$ {\it PHP, HTML, CSS, AJAX, Javascript, Mysql, Web development } \\
+Built and deployed web application for room booking in IIIT-Hyderabad.
+
+\section{
+Skill Set}
+
+\begin{table}[htbp]
+\begin{tabular}[ht]{|l | p{7cm} |}
+\hline
+Operating system & Linux/Unix, Microsoft Windows, Mac OS X \\
+\hline
+Languages & C, C++/CPP, Python, Ruby, PHP, Javascript, Scheme, Latex, Bash, Java, ARM-assembly \\
+\hline
+DBMS & Mysql \\
+\hline
+Programming Environment & Vim, eclipse, Sublime Text, DrRacket \\
+\hline
+Web Development & HTML, CSS, Javascript, Web2py, Ruby on Rails, Backbone, Jquery, Bootstrap \\
+\hline
+Testing Tools & Rspec , Jasmine \\
+\hline
+API's/softwares/tools
+& Amazon AWS(S3, EC2),
+Openstack, REST, Wireshark, Cisco Packet Tracer,
+OpenGL, Pthread, Libvirt, Git, Svn, Weka, Gephi \\
+\hline
+
+\end{tabular}
+\end{table}
+
+\section{Achievements}
+
+\begin{itemize}
+\item
+	\hypersetup{urlcolor=black}	
+	Competed in \href{http://icpc.baylor.edu/}{ACM - International collegiate programming contest}, Asia Regionals three times.
+	\hypersetup{urlcolor=blue}
+	{(Team size: 3)}
+
+\item Rank 3316 in IIT-JEE and Rank 2026 in AIEEE \hfill{2010}
+\item IIIT-Hyderabad Dean's award II and III for academic excellence. \hfill{2010-2011} 
+\end{itemize}
+
+
+\section{Extra-Curricular \\ Activities}
+{\it Cultural Advisor,} IIIT-Hyderabad \hfill{2013-Present} \\
+{\it Cultural Secretary,} IIIT-Hyderabad  \hfill{2012 - 2013} \\
+{\it Coordinator,} IIIT-Hyderabad's chapter of {\it Spic-Macay} \hfill{2012 - 2013} \\
+{\it Dance Club Head,} IIIT-Hyderabad \hfill{2011 - 2013}
+            
+\noindent The above information is correct to the best of my knowledge.\\
+Updated on : November 28, 2013 \hfill{- Parag Gupta} 
+
+
+\end{resume}
+
+
+\end{document}
+
+
+
+
